@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.sucursales.SucursalesFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--    codigo producto 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsu1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/locationsur" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamesu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namesu1" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptionsu1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvLocatiosu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/horariosu1"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    codigo sucursal 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsu2"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/locationorte" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamesu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namesu2" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionsu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptionsu2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvLocatiosu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/horariosu2"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    codigo sucursal 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsu3"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/locationeste" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamesu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namesu3" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionsu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptionsu3"
+                        android:gravity="bottom"/>
+
+                    <TextView
+                        android:id="@+id/tvLocatiosu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/horariosu3"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    codigo sucursal 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsu4"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/locationoeste" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamesu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namesu4" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionsu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptionsu4"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvLocatiosu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/horariosu4"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

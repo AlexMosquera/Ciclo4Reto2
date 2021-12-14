@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.servicios.ServiciosFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--    codigo producto 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgs1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/drive" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNames1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/names1" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptions1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptions1"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    codigo producto 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgs2"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/autoservicio" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNames2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/names2" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptions2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptions2"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    codigo producto 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgs3"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/servicios" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNames3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/names3"/>
+
+                    <TextView
+                        android:id="@+id/tvDescriptions3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptions3"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvPrices3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/telefono" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
