@@ -6,7 +6,9 @@
     <string name="nav_header_subtitle">alexander.mosquera2.mt@correo.usa.edu.co</string>
     <string name="nav_header_desc">Navigation header</string>
 
-    <string name="action_add">Agregar</string>
+    <string name="action_add">SQlLite</string>
+    <string name="mapa">Mapa</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_productos">Productos</string>

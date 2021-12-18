@@ -1,6 +1,7 @@
 package com.example.fastfood.ui.productos;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,13 +21,37 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.fastfood.FormActivity;
 import com.example.fastfood.R;
+import com.example.fastfood.adaptadores.ProductoAdapter;
+import com.example.fastfood.casos_uso.CasoUsoProducto;
+import com.example.fastfood.datos.DBHelper;
+import com.example.fastfood.modelos.Producto;
+
+import java.util.ArrayList;
 
 public class ProductosFragment extends Fragment {
+
+    private String TABLE_NAME = "PRODUCTOS";
+    private CasoUsoProducto casoUsoProducto;
+    private GridView gridView;
+    private DBHelper dbHelper;
+    private ArrayList<Producto> productos;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_productos, container, false);
+        try{
+            casoUsoProducto = new CasoUsoProducto();
+            dbHelper = new DBHelper(getContext());
+            Cursor cursor = dbHelper.getData(TABLE_NAME);
+            productos = casoUsoProducto.llenarListaProductos(cursor);
+            gridView = (GridView) root.findViewById(R.id.gridProductos);
+            ProductoAdapter productoAdapter = new ProductoAdapter(root.getContext(), productos);
+            gridView.setAdapter(productoAdapter);
+        }catch (Exception e){
+            Toast.makeText(getContext(), e.toString(),Toast.LENGTH_LONG).show();
+
+        }
 
         return root;
     }
